@@ -10,9 +10,10 @@ jobs:
 
     steps:
      - name: EF1
-       uses: actions/checkout@main jlumbroso/free-disk-space@main
-       with:
-        # this might remove tools that are actually needed,
+       uses: actions/checkout@main        
+     - name: EF9
+       uses: jlumbroso/free-disk-space@main       
+       with:        # this might remove tools that are actually needed,
         # if set to "true" but frees about 6 GB
         tool-cache: true
         
